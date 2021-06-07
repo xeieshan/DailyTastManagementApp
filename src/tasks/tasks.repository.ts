@@ -4,7 +4,6 @@ import { EntityRepository, Repository } from 'typeorm';
 import { Task } from './task.entitiy';
 import { TaskStatus } from './task-status.enum';
 import { NotFoundException } from '@nestjs/common';
-import { fileURLToPath } from 'url';
 
 @EntityRepository(Task)
 export class TasksRepository extends Repository<Task> {
